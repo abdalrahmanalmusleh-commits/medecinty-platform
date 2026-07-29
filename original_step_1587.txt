@@ -1,0 +1,38 @@
+Created At: 2026-07-01T03:32:32Z
+Completed At: 2026-07-01T03:32:33Z
+File Path: `file:///C:/Users/ONE%20BY%20ONE/.gemini/antigravity/scratch/medicinety-platform/src/app/settings/page.tsx`
+Total Lines: 2199
+Total Bytes: 143882
+Showing lines 2170 to 2199
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+2170:               {confirmModal.title}
+2171:             </h3>
+2172:             <p className="text-xs text-slate-350 leading-relaxed mb-6 font-bold">
+2173:               {confirmModal.message}
+2174:             </p>
+2175:             <div className="flex gap-3 justify-center">
+2176:               <button
+2177:                 onClick={() => {
+2178:                   confirmModal.onConfirm();
+2179:                   setConfirmModal(prev => ({ ...prev, isOpen: false }));
+2180:                 }}
+2181:                 className="px-5 py-2 bg-[#0D9488] hover:bg-[#0D9488]/90 text-white text-xs font-black rounded-lg transition-all shadow-md"
+2182:               >
+2183:                 {language === "ar" ? "تأكيد" : "Confirm"}
+2184:               </button>
+2185:               <button
+2186:                 onClick={() => setConfirmModal(prev => ({ ...prev, isOpen: false }))}
+2187:                 className="px-5 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold rounded-lg transition-all"
+2188:               >
+2189:                 {language === "ar" ? "إلغاء" : "Cancel"}
+2190:               </button>
+2191:             </div>
+2192:           </div>
+2193:         </div>
+2194:       )}
+2195: 
+2196:     </div>
+2197:   );
+2198: }
+2199: 
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

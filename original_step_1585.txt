@@ -1,0 +1,38 @@
+Created At: 2026-07-01T03:32:30Z
+Completed At: 2026-07-01T03:32:30Z
+File Path: `file:///C:/Users/ONE%20BY%20ONE/.gemini/antigravity/scratch/medicinety-platform/src/app/settings/page.tsx`
+Total Lines: 2199
+Total Bytes: 143882
+Showing lines 2045 to 2074
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+2045:                         <div className="flex justify-between items-center">
+2046:                           <h4 className="text-sm font-bold text-black dark:text-white">
+2047:                             {language === "ar" ? "إعدادات هوية وعناوين المنصة" : "Platform Identity & Metadata"}
+2048:                           </h4>
+2049:                           <button type="submit" disabled={isSavingAdmin} className="flex items-center gap-1.5 px-4 py-2 bg-[#0D9488] hover:bg-[#0D9488]/90 text-white text-xs font-bold rounded-lg transition-all shadow-md">
+2050:                             <Save className="w-3.5 h-3.5" />
+2051:                             <span>{isSavingAdmin ? (language === "ar" ? "جاري الحفظ..." : "Saving...") : (language === "ar" ? "حفظ التغييرات" : "Save Settings")}</span>
+2052:                           </button>
+2053:                         </div>
+2054: 
+2055:                         {showAdminSuccess && (
+2056:                           <div className="p-3 bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-xs font-bold rounded-lg text-center animate-pulse">
+2057:                             {language === "ar" ? "تم حفظ جميع تعديلات المنصة بنجاح!" : "All platform modifications saved successfully!"}
+2058:                           </div>
+2059:                         )}
+2060: 
+2061:                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+2062:                           <div className="space-y-1">
+2063:                             <label className="text-[10px] font-bold text-slate-400 uppercase tracking-wide">{language === "ar" ? "اسم المنصة (عربي)" : "Platform Name (Arabic)"}</label>
+2064:                             <input type="text" value={platformTitleAr} onChange={e => setPlatformTitleAr(e.target.value)} className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200/60 dark:border-teal-500/20 text-xs text-black dark:text-white px-3 py-2.5 rounded-lg outline-none font-semibold focus:border-[#0D9488]" />
+2065:                           </div>
+2066:                           <div className="space-y-1">
+2067:                             <label className="text-[10px] font-bold text-slate-400 uppercase tracking-wide">{language === "ar" ? "اسم المنصة (إنجليزي)" : "Platform Name (English)"}</label>
+2068:                             <input type="text" value={platformTitleEn} onChange={e => setPlatformTitleEn(e.target.value)} className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200/60 dark:border-teal-500/20 text-xs text-black dark:text-white px-3 py-2.5 rounded-lg outline-none font-semibold focus:border-[#0D9488]" />
+2069:                           </div>
+2070:                           <div className="space-y-1">
+2071:                             <label className="text-[10px] font-bold text-slate-400 uppercase tracking-wide">{language === "ar" ? "الشعار النصي (عربي)" : "Slogan (Arabic)"}</label>
+2072:                             <input type="text" value={sloganAr} onChange={e => setSloganAr(e.target.value)} className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200/60 dark:border-teal-500/20 text-xs text-black dark:text-white px-3 py-2.5 rounded-lg outline-none font-semibold focus:border-[#0D9488]" />
+2073:                           </div>
+2074:                           <div className="space-y-1">
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.
